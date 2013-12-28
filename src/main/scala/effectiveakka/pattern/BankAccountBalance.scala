@@ -1,4 +1,4 @@
-package effectiveakka.pattern.extra
+package effectiveakka.pattern
 import akka.actor.Actor;
 
 case class GetCustomerAccountBalances(id: Long)

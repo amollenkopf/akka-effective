@@ -2,6 +2,7 @@ package effectiveakka.pattern.extra
 import akka.actor.{ Actor, ActorRef, Props }
 import scala.concurrent.ExecutionContext
 import scala.concurrent.duration._
+import effectiveakka.pattern._
 
 class AccountBalanceRetriever3(cActor: ActorRef, sActor: ActorRef, mmActor: ActorRef) extends Actor {
   val checkingBalances, savingBalances, moneyMarketBalances: Option[List[(Long, BigDecimal)]] = None

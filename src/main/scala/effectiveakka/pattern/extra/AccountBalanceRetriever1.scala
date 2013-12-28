@@ -4,6 +4,7 @@ import akka.pattern.ask
 import akka.util.Timeout
 import scala.concurrent.ExecutionContext
 import scala.concurrent.duration._
+import effectiveakka.pattern._
 
 class AccountBalanceRetriever1(cActor: ActorRef, sActor: ActorRef, mmActor: ActorRef) extends Actor{
   implicit val timeout: Timeout = 100 milliseconds

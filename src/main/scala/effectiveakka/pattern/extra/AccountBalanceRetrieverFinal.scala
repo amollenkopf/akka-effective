@@ -3,6 +3,7 @@ import akka.actor.{ Actor, ActorRef, Props, ActorLogging }
 import akka.event.LoggingReceive
 import scala.concurrent.ExecutionContext
 import scala.concurrent.duration._
+import effectiveakka.pattern._
 
 object AccountBalanceRetrieverFinal {
   case object AccountRetrievalTimeout

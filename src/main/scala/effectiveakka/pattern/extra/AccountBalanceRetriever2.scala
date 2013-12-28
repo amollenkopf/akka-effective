@@ -1,5 +1,6 @@
 package effectiveakka.pattern.extra
 import akka.actor.{ Actor, ActorRef }
+import effectiveakka.pattern._
 
 class AccountBalanceRetriever2(cActor: ActorRef, sActor: ActorRef, mmActor: ActorRef) extends Actor{
   val checkingBalances, savingBalances, moneyMarketBalances: Option[List[(Long, BigDecimal)]] = None
